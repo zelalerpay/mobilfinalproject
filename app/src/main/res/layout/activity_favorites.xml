@@ -1,0 +1,23 @@
+<!-- res/layout/activity_favorites.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0FFCBC1">  <!-- Arka plan rengi eklendi -->
+
+    <ListView
+        android:id="@+id/listViewFavs"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_weight="1" />
+
+    <!-- QR fragment'ı burada göstereceğiz -->
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="262dp"
+        android:visibility="visible" />
+
+</LinearLayout>

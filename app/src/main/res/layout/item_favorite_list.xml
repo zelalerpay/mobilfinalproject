@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#C0FFCBC1"
+    android:gravity="center">
+
+    <!-- Favorite Venue Name -->
+    <TextView
+        android:id="@+id/tvNameFav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favorite Venue"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="#804E57"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:paddingBottom="16dp"/>
+
+    <!-- Rating Bar -->
+    <RatingBar
+        android:id="@+id/ratingBarFav"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Smile and Sad Icons in a Horizontal Layout -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imgSmile"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:contentDescription="Smile Icon"
+            android:padding="16dp"
+            android:src="@drawable/ic_smile" />
+
+        <ImageView
+            android:id="@+id/imgSad"
+            android:layout_width="72dp"
+            android:layout_height="71dp"
+            android:contentDescription="Sad Icon"
+            android:padding="16dp"
+            android:src="@drawable/ic_sad" />
+    </LinearLayout>
+</LinearLayout>

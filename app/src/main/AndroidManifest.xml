@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="msku.ceng.madlab.uniguide">
+
+    <!-- İnternetten görsel yükleme vb. işlemler için izin -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+       android:theme="@style/Theme.UniGuide" >
+
+        <!-- Giriş (Login/Register) Ekranı (Ana Launcher Activity) -->
+        <activity
+            android:name=".activities.MainActivity1"
+            android:theme="@style/Theme.UniGuide"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Kategori Ekranı -->
+        <activity android:name=".activities.CategoryActivity" />
+
+        <!-- Orijinal MainActivity -->
+        <activity android:name=".activities.MainActivity" />
+
+
+        <!-- Mekan Listesi Ekranı -->
+        <activity android:name=".activities.VenueListActivity" />
+
+        <!-- Mekan Detay Ekranı -->
+        <activity android:name=".activities.VenueDetailActivity" />
+
+        <!-- Favoriler Ekranı -->
+        <activity android:name=".activities.FavoritesActivity" />
+
+    </application>
+</manifest>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#D8C8C6">
+
+    <!-- Kullanıcı ikonu -->
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/photogang"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Kullanıcı adı giriş alanı -->
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:padding="12dp"
+        android:background="@color/pastelButton"
+        android:textColor="@color/pastelText"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- E-posta giriş alanı -->
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:background="@color/pastelButton"
+        android:textColor="@color/pastelText"
+        android:layout_marginBottom="12dp"
+        android:visibility="gone"/>
+
+    <!-- Şifre giriş alanı -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:background="@color/pastelButton"
+        android:textColor="@color/pastelText"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Giriş yap butonu -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#804E57"
+        android:padding="12dp"
+        android:text="Log In"
+        android:textColor="@color/pastelText" />
+
+    <!-- Kayıt ol butonu -->
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:padding="12dp"
+        android:background="#2D98A5"
+        android:textColor="@color/pastelText"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <!-- Yeni hesap metni -->
+    <TextView
+        android:id="@+id/tvNewAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create New Account"
+        android:textColor="#6B0F1E"
+        android:layout_marginTop="16dp"
+        android:gravity="center"/>
+</LinearLayout>
